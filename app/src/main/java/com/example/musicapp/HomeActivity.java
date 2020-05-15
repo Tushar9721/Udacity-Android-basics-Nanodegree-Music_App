@@ -8,12 +8,16 @@ import android.view.View;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView songsView;
     TextView playList;
     TextView albumView;
     TextView artistView;
+    TextView timeOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,20 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         artistView = findViewById(R.id.artistView);
         playList = findViewById(R.id.playList);
         albumView = findViewById(R.id.albumView);
+        timeOut = findViewById(R.id.timeOut);
+
+        Calendar cal = Calendar.getInstance();
+
+        SimpleDateFormat timeOnly = new SimpleDateFormat("HH:mm:ss");
+        if(cal.getTime().getHours()<=11){
+            timeOut.setText("Good Morning....");
+        }
+        else if(cal.getTime().getHours()>11 && cal.getTime().getHours() <= 17 ){
+            timeOut.setText("Good Afternoon....");
+        }
+        else {
+            timeOut.setText("Good Evening....");
+        }
 
         setOnClickListeners();
     }

@@ -35,7 +35,7 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.ViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
 
         //set text to adapter here.
         holder.artistName.setText(data.get(position).artistName);
@@ -48,9 +48,9 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.ViewHolder> 
             public void onClick(View v) {
 
                 Intent intent = new Intent(context,ParticularSong.class);
+                intent.putExtra("song",data.get(position).songName+" by "+data.get(position).artistName);
+                intent.putExtra("duration",data.get(position).duration);
                 context.startActivity(intent);
-
-
             }
         });
 

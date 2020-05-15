@@ -8,5 +8,6 @@
     <color name="black">#000</color>
     <color name="light">#FEC1C1C1</color>
     <color name="border">#A62F2F</color>
+    <color name="green">#0CE400</color>
 
 </resources>

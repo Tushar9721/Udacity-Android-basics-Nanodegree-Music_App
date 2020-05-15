@@ -6,10 +6,11 @@ public class SongsData {
     public String artistName;
     public String duration;
 
-    public SongsData(String songName, String artistName){
+    public SongsData(String songName, String artistName, String duration){
 
         this.songName = songName;
         this.artistName = artistName;
+        this.duration = duration;
 
     }
 

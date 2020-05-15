@@ -34,6 +34,7 @@
         android:src="@drawable/ic_music_notes" />
 
     <TextView
+        android:id="@+id/playDuration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="3:00 mins"
