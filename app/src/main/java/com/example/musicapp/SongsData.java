@@ -13,6 +13,14 @@ public class SongsData {
 
     }
 
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
+
     public String getSongName() {
         return songName;
     }

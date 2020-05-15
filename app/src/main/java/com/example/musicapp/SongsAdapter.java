@@ -1,6 +1,7 @@
 package com.example.musicapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,15 +35,32 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.ViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
 
         //set text to adapter here.
+        holder.artistName.setText(data.get(position).artistName);
+        holder.duration.setText(data.get(position).duration);
+        holder.songsName.setText(data.get(position).songName);
+
+
+        holder.parentLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(context,ParticularSong.class);
+                context.startActivity(intent);
+
+
+            }
+        });
+
 
     }
 
     @Override
-    public int getItemCount() {
-        return 10;
+    public int getItemCount()
+    {
+        return data.size();
     }
 
 
