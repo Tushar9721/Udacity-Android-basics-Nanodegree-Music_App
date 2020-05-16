@@ -24,28 +24,33 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        //creating views
         songsView = findViewById(R.id.songsView);
         artistView = findViewById(R.id.artistView);
         playList = findViewById(R.id.playList);
         albumView = findViewById(R.id.albumView);
         timeOut = findViewById(R.id.timeOut);
 
+        //creating object of calendar
         Calendar cal = Calendar.getInstance();
 
+        //defining the format of the time
         SimpleDateFormat timeOnly = new SimpleDateFormat("HH:mm:ss");
         if(cal.getTime().getHours()<=11){
-            timeOut.setText("Good Morning....");
+            timeOut.setText(R.string.good_morning);
         }
         else if(cal.getTime().getHours()>11 && cal.getTime().getHours() <= 17 ){
-            timeOut.setText("Good Afternoon....");
+            timeOut.setText(R.string.good_afternoon);
         }
         else {
-            timeOut.setText("Good Evening....");
+            timeOut.setText(R.string.good_evening);
         }
 
+        //calling function
         setOnClickListeners();
     }
 
+    //calling onclick actions.
     private void setOnClickListeners() {
         albumView.setOnClickListener(this);
         songsView.setOnClickListener(this);
@@ -53,6 +58,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         artistView.setOnClickListener(this);
     }
 
+    //creating intents in switch case.
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

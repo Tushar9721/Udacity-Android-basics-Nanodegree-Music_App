@@ -20,12 +20,14 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.ViewHolder> 
     private Context context;
     private ArrayList<SongsData> data = new ArrayList<>();
 
+    //creating constructor.
     public SongsAdapter(Context context, ArrayList<SongsData> data) {
         this.context = context;
         this.data = data;
     }
 
 
+    //creating views and setting XML layout with adapter.
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -33,6 +35,7 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.ViewHolder> 
         ViewHolder viewHolder = new ViewHolder(view);
         return viewHolder;
     }
+
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
@@ -48,8 +51,8 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.ViewHolder> 
             public void onClick(View v) {
 
                 Intent intent = new Intent(context,ParticularSong.class);
-                intent.putExtra("song",data.get(position).songName+" by "+data.get(position).artistName);
-                intent.putExtra("duration",data.get(position).duration);
+                intent.putExtra(context.getString(R.string.song_intent),data.get(position).songName+" by "+data.get(position).artistName);
+                intent.putExtra(context.getString(R.string.duration_intent),data.get(position).duration);
                 context.startActivity(intent);
             }
         });
@@ -57,11 +60,13 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.ViewHolder> 
 
     }
 
+    //defining number of items.
     @Override
     public int getItemCount()
     {
         return data.size();
     }
+
 
 
     public class ViewHolder extends RecyclerView.ViewHolder {

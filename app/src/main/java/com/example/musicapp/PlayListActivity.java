@@ -22,17 +22,19 @@ public class PlayListActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_list);
 
-
+        //creating views
         favourite = findViewById(R.id.favourite);
         mostPlayed = findViewById(R.id.mostPlayed);
         recentlyPlayed = findViewById(R.id.recentlyPlayed);
         custom = findViewById(R.id.custom);
         backButtonPlaylist = findViewById(R.id.backButtonPlaylist);
 
+        //calling function.
         setOnclick();
 
     }
 
+    //performing onclick functions.
     private void setOnclick() {
 
         favourite.setOnClickListener(new View.OnClickListener() {

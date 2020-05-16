@@ -25,9 +25,12 @@ public class SongsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_songs);
+
+        //creating views
         backButton = findViewById(R.id.backButton);
         recyclerView = findViewById(R.id.recyclerView);
 
+        //calling function.
         addValues(songName, artistName, duration);
         setAdapter();
         setOnclickListener();
@@ -35,6 +38,7 @@ public class SongsActivity extends AppCompatActivity {
     }
 
 
+    //adding values to arrayList.
     private void addValues(String[] name, String[] artist, String[] duration) {
 
         for (int i = 0; i < songName.length; i++) {
@@ -46,6 +50,7 @@ public class SongsActivity extends AppCompatActivity {
 
     }
 
+    //performing onclick.
     private void setOnclickListener() {
 
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -57,6 +62,7 @@ public class SongsActivity extends AppCompatActivity {
 
     }
 
+    //sending the data to adapter.
     private void setAdapter() {
 
         SongsAdapter adapter = new SongsAdapter(this, data);

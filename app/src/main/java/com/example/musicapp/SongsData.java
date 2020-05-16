@@ -1,5 +1,8 @@
 package com.example.musicapp;
 
+/**
+ * Data class
+ */
 public class SongsData {
 
     public String songName;
