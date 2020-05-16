@@ -13,8 +13,11 @@ public class ArtistActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_artist_acitvity);
+
+        //creating views
         backButtonArtist = findViewById(R.id.backButtonArtist);
 
+        //adding onClick listener.
         backButtonArtist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

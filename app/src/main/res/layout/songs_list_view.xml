@@ -3,9 +3,9 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="10dp"
+    android:layout_marginBottom="@dimen/ten_dp"
     android:background="@color/white"
-    android:padding="10dp">
+    android:padding="@dimen/ten_dp">
 
 
     <ImageView
@@ -19,8 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="@dimen/tewenty_dp"
+        android:layout_marginLeft="@dimen/tewenty_dp"
         android:layout_toEndOf="@+id/imageView"
         android:layout_toRightOf="@+id/imageView"
         android:orientation="vertical">
@@ -30,19 +30,17 @@
             android:id="@+id/songName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="@dimen/five_dp"
             android:fontFamily="monospace"
-            android:text="When it hurts"
+            android:text="@string/when_it_hurts"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="@dimen/tewenty_sp" />
 
         <TextView
             android:id="@+id/artistName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/songName"
             android:fontFamily="monospace"
-            android:text="My Name"
             android:textColor="@color/light"
             android:textSize="18sp" />
 
@@ -50,10 +48,8 @@
             android:id="@+id/duration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/songName"
             android:fontFamily="monospace"
             android:textColor="@color/light"
-            android:text="3:00 min"
             android:textSize="18sp" />
 
     </LinearLayout>

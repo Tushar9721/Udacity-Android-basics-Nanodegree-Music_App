@@ -9,6 +9,7 @@ import android.widget.ImageView;
 public class AlbumActivity extends AppCompatActivity {
 
 
+
     ImageView backButtonAlbum;
 
     @Override
@@ -16,7 +17,10 @@ public class AlbumActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_album_acitvity);
 
+        //creating views.
         backButtonAlbum = findViewById(R.id.backButtonAlbum);
+
+        //adding Onclick listener.
         backButtonAlbum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

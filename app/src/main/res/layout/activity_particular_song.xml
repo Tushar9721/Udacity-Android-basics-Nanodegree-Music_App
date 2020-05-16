@@ -13,18 +13,17 @@
         android:id="@+id/backButtonSingleSong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="20dp"
+        android:padding="@dimen/tewenty_dp"
         android:src="@drawable/ic_arrow_back" />
 
     <TextView
         android:id="@+id/singleSongName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SOng NAme"
         android:gravity="center"
         android:fontFamily="monospace"
-        android:textSize="24sp"
-        android:padding="10dp"
+        android:textSize="@dimen/twenty_four_sp"
+        android:padding="@dimen/ten_dp"
         android:textColor="@color/white"
         />
 
@@ -37,11 +36,10 @@
         android:id="@+id/playDuration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="3:00 mins"
         android:gravity="center"
         android:fontFamily="monospace"
-        android:textSize="24sp"
-        android:padding="10dp"
+        android:textSize="@dimen/twenty_four_sp"
+        android:padding="@dimen/ten_dp"
         android:textColor="@color/white"
         />
 
@@ -49,28 +47,28 @@
         android:id="@+id/playButtons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="@dimen/hundred_dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="20dp">
+        android:padding="@dimen/tewenty_dp">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="20dp"
+            android:padding="@dimen/tewenty_dp"
             android:src="@drawable/ic_previous_music" />
 
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="20dp"
+            android:padding="@dimen/tewenty_dp"
             android:src="@drawable/ic_play" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="20dp"
+            android:padding="@dimen/tewenty_dp"
             android:src="@drawable/ic_next_play" />
 
     </LinearLayout>

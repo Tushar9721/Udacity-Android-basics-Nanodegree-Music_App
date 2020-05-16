@@ -10,8 +10,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MYMusic"
-        android:textSize="40sp"
+        android:text="@string/mymusic"
+        android:textSize="@dimen/forty_sp"
         android:gravity="center"
         android:textColor="@color/white"
         android:fontFamily="cursive"

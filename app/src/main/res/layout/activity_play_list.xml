@@ -10,13 +10,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp">
+        android:layout_margin="@dimen/tewenty_dp">
 
         <ImageView
             android:id="@+id/backButtonPlaylist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="20dp"
+            android:padding="@dimen/tewenty_dp"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_arrow_back" />
 
@@ -24,12 +24,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
-            android:text="Playlist"
+            android:text="@string/playlist"
             android:layout_toEndOf="@+id/backButtonPlaylist"
             android:layout_toRightOf="@+id/backButtonPlaylist"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/tewenty_dp"
             android:textColor="@color/white"
-            android:textSize="30sp" />
+            android:textSize="@dimen/thirty_sp" />
 
     </RelativeLayout>
 
@@ -38,7 +38,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="40dp"
+        android:layout_margin="@dimen/forty_dp"
         >
 
 
@@ -53,14 +53,14 @@
                 android:id="@+id/favourite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:fontFamily="sans-serif-medium"
-                android:padding="20dp"
-                android:text="Favourites"
+                android:padding="@dimen/tewenty_dp"
+                android:text="@string/favourites"
                 android:gravity="center"
                 android:background="@drawable/playlist_text_view"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/tewenty_sp" />
 
             <TextView
                 android:id="@+id/mostPlayed"
@@ -68,12 +68,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="sans-serif-medium"
-                android:padding="20dp"
-                android:text="MostPlayed"
+                android:padding="@dimen/tewenty_dp"
+                android:text="@string/mostplayed"
                 android:gravity="center"
                 android:background="@drawable/playlist_text_view"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/tewenty_sp" />
 
             <TextView
                 android:id="@+id/recentlyPlayed"
@@ -81,22 +81,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="sans-serif-medium"
-                android:padding="20dp"
-                android:text="Recently played"
+                android:padding="@dimen/tewenty_dp"
+                android:text="@string/recently_played"
                 android:gravity="center"
                 android:background="@drawable/playlist_text_view"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/tewenty_sp" />
 
             <TextView
                 android:id="@+id/custom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:text="Custom"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:padding="@dimen/tewenty_dp"
+                android:text="@string/custom"
                 android:gravity="center"
-                android:textSize="20sp"
+                android:textSize="@dimen/tewenty_sp"
                 android:background="@drawable/playlist_text_view"
                 android:fontFamily="sans-serif-medium"
                 android:textColor="@color/black" />

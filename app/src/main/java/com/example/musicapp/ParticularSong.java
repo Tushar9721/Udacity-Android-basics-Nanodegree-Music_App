@@ -22,23 +22,27 @@ public class ParticularSong extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_particular_song);
 
+        //creating views
         playDuration = findViewById(R.id.playDuration);
         singleSongName = findViewById(R.id.singleSongName);
         backButtonSingleSong = findViewById(R.id.backButtonSingleSong);
         playButtons = findViewById(R.id.playButtons);
 
+        //calling functions.
         setData();
         setOnclick();
 
     }
 
+    //setting data to view.
     private void setData() {
         Intent intent = getIntent();
-        singleSongName.setText(intent.getStringExtra("song"));
-        playDuration.setText(intent.getStringExtra("duration"));
+        singleSongName.setText(intent.getStringExtra(getString(R.string.song_intent)));
+        playDuration.setText(intent.getStringExtra(getString(R.string.duration_intent)));
 
     }
 
+    //performing on click.
     private void setOnclick() {
         backButtonSingleSong.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +54,7 @@ public class ParticularSong extends AppCompatActivity {
         playButtons.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ParticularSong.this, "Working on this feature", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ParticularSong.this, R.string.working, Toast.LENGTH_SHORT).show();
             }
         });
     }

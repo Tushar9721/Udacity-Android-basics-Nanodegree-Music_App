@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">MusicApp</string>
+    <string name="album">Album</string>
+    <string name="artist">Artist</string>
+    <string name="artist_names">Artist Names</string>
+    <string name="hi">Hi,</string>
+    <string name="songs">SONGS</string>
+    <string name="playlist">PLAYLIST</string>
+    <string name="mymusic">MYMusic</string>
+    <string name="favourites">Favourites</string>
+    <string name="mostplayed">MostPlayed</string>
+    <string name="recently_played">Recently played</string>
+    <string name="custom">Custom</string>
+    <string name="when_it_hurts">When it hurts</string>
+    <string name="good_morning">Good Morning....</string>
+    <string name="good_afternoon">Good Afternoon....</string>
+    <string name="good_evening">Good Evening....</string>
+    <string name="song_intent">song</string>
+    <string name="duration_intent">duration</string>
+    <string name="working">Working on this feature</string>
+    <string name="dura">duration</string>
 </resources>

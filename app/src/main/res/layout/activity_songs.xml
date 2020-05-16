@@ -11,27 +11,27 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp">
+        android:layout_margin="@dimen/tewenty_dp">
 
         <ImageView
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="20dp"
+            android:padding="@dimen/tewenty_dp"
             android:src="@drawable/ic_arrow_back" />
 
         <TextView
             android:id="@+id/activityText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="@dimen/tewenty_dp"
             android:layout_marginTop="10dp"
             android:layout_toEndOf="@+id/backButton"
             android:layout_toRightOf="@+id/backButton"
             android:fontFamily="monospace"
-            android:text="Songs"
+            android:text="@string/songs"
             android:textColor="@color/white"
-            android:textSize="30sp" />
+            android:textSize="@dimen/thirty_sp" />
 
     </RelativeLayout>
 
@@ -40,7 +40,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="@dimen/tewenty_dp"
         android:scrollbars="vertical" />
 
 </LinearLayout>

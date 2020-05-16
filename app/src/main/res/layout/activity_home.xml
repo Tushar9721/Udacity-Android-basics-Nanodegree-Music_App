@@ -10,14 +10,14 @@
         android:id="@+id/greetings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
+        android:layout_margin="@dimen/forty_dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
-            android:text="Hi,"
+            android:text="@string/hi"
             android:textColor="@color/white"
             android:textSize="30sp" />
 
@@ -27,14 +27,14 @@
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:textColor="@color/white"
-            android:textSize="30sp" />
+            android:textSize="@dimen/thirty_sp" />
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/greetings"
-        android:layout_margin="30dp">
+        android:layout_margin="@dimen/thirty_dp">
 
 
         <LinearLayout
@@ -48,50 +48,52 @@
                 android:id="@+id/songsView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/tewenty_dp"
                 android:fontFamily="sans-serif-medium"
-                android:padding="30dp"
-                android:text="SONGS"
+                android:padding="@dimen/thirty_dp"
+                android:text="@string/songs"
                 android:gravity="center"
                 android:background="@drawable/text_view_background"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/tewenty_sp" />
 
             <TextView
                 android:id="@+id/playList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/tewenty_dp"
                 android:fontFamily="sans-serif-medium"
-                android:padding="30dp"
-                android:text="PLAYLIST"
+                android:padding="@dimen/thirty_dp"
+                android:text="@string/playlist"
                 android:gravity="center"
                 android:background="@drawable/text_view_background"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/tewenty_sp" />
 
             <TextView
                 android:id="@+id/albumView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/tewenty_dp"
                 android:fontFamily="sans-serif-medium"
-                android:padding="30dp"
-                android:text="ALBUM"
+                android:padding="@dimen/thirty_dp"
+                android:text="@string/album"
                 android:gravity="center"
+                android:textAllCaps="true"
                 android:background="@drawable/text_view_background"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/tewenty_sp" />
 
             <TextView
                 android:id="@+id/artistView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:padding="30dp"
-                android:text="ARTIST"
+                android:layout_marginBottom="@dimen/tewenty_dp"
+                android:padding="@dimen/tewenty_dp"
+                android:text="@string/artist"
+                android:textAllCaps="true"
                 android:gravity="center"
-                android:textSize="20sp"
+                android:textSize="@dimen/tewenty_sp"
                 android:background="@drawable/text_view_background"
                 android:fontFamily="sans-serif-medium"
                 android:textColor="@color/black" />
